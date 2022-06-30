@@ -6,9 +6,7 @@ const apiClient = client();
 
 dotenv.config();
 
-const server_port = process.env.SERVER_PORT ?? "";
-
-const port = server_port || 5000;
+const port = 5000;
 app.listen(port, () => {
   console.log(`Application started on ${port}...`);
 });
